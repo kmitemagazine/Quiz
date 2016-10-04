@@ -74,6 +74,3 @@ body {
 .btn-check:hover {
   background-color: #1b7943;
 }
-.fb-like, .btn {
-  display: none;
-}

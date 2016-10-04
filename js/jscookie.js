@@ -27,8 +27,6 @@ function checkCookie() {
         setCookie("tries", numberOfTries, 365);
         document.getElementById('tries').innerHTML = 'You made <strong>'+ numberOfTries + '</strong> attempts';
         document.getElementById("tries").style.display = "block";
-        document.getElementsByClassName('fb-like').style.display = "block";
-        document.getElementsByClassName('btn').style.display = "block";
         console.log("number of tries " + numberOfTries);
     } else {
         numberOfTries = 1;
@@ -36,8 +34,6 @@ function checkCookie() {
             setCookie("tries", numberOfTries, 365);
             document.getElementById('tries').innerHTML = 'You made <strong>'+ numberOfTries + '</strong> attempt';
             document.getElementById("tries").style.display = "block";
-            document.getElementsByClassName('fb-like').style.display = "block";
-            document.getElementsByClassName('btn').style.display = "block";
         }
     }
 }
