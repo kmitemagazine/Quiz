@@ -23,6 +23,7 @@ function getCookie(cname) {
 function checkCookie() {
     var numberOfTries = getCookie("tries");
     if (numberOfTries != "") {
+        numberOfTries++;
         console.log("number of tries " + numberOfTries);
     } else {
         numberOfTries = 1;
