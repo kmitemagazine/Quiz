@@ -2,14 +2,35 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://kmitemagazine.github.io/Quiz">
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://kmitemagazine.github.io/Quiz"/>
+    <meta property="og:title" content="Quiz!"/>
+    <meta property="og:description" content="Test your knowledge!"/>
+    <meta property="og:image" content="" />
+    <meta property="fb:app_id" content="665758900256675" />
+    <meta property="article:author" content="http://www.facebook.com/kmitrakmit" />
     <title>Quiz</title>
     <script src="js/prefixfree.min.js"></script>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
   </head>
-
   <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '665758900256675',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
     <div class='wrapper'>
 
@@ -776,6 +797,22 @@
   <div class="result"></div>
   <div class="tries" id="tries"></div>
   <button class='btn-check' onclick="checkCookie()">Submit</button>
+  <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+  </div>
+  <div id="shareBtn" class="btn btn-success clearfix">Share</div>
+  <script>
+  document.getElementById('shareBtn').onclick = function() {
+    FB.ui({
+      method: 'share',
+      display: 'popup',
+      href: 'https://kmitemagazine.github.io/Quiz/',
+    }, function(response){});
+  }
+  </script>
 </div>
 </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
