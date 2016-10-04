@@ -24,6 +24,7 @@ function checkCookie() {
     var numberOfTries = getCookie("tries");
     if (numberOfTries != "") {
         numberOfTries++;
+        setCookie("tries", numberOfTries, 365);
         console.log("number of tries " + numberOfTries);
     } else {
         numberOfTries = 1;
