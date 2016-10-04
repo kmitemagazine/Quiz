@@ -26,14 +26,14 @@ function checkCookie() {
         numberOfTries++;
         setCookie("tries", numberOfTries, 365);
         document.getElementById('tries').innerHTML = 'You made <strong>'+ numberOfTries + '</strong> attempts';
-        document.getElementById("tries").style.display = "inline";
+        document.getElementById("tries").style.display = "block";
         console.log("number of tries " + numberOfTries);
     } else {
         numberOfTries = 1;
         if (numberOfTries != "" && numberOfTries != null) {
             setCookie("tries", numberOfTries, 365);
             document.getElementById('tries').innerHTML = 'You made <strong>'+ numberOfTries + '</strong> attempt';
-            document.getElementById("tries").style.display = "inline";
+            document.getElementById("tries").style.display = "block";
         }
     }
 }
