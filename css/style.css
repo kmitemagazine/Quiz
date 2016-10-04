@@ -52,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-.result {
+.result .tries {
   margin-bottom: 2em;
   font-size: 1.2em;
   background-color: #3498db;
