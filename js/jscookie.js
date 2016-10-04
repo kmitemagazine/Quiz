@@ -25,13 +25,13 @@ function checkCookie() {
     if (numberOfTries != "") {
         numberOfTries++;
         setCookie("tries", numberOfTries, 365);
-        document.getElementsByClassName('result').innerHTML += 'in '+ numberOfTries + 'attempt';
+        document.getElementsById('result').innerHTML += 'in '+ numberOfTries + 'attempts';
         console.log("number of tries " + numberOfTries);
     } else {
         numberOfTries = 1;
         if (numberOfTries != "" && numberOfTries != null) {
             setCookie("tries", numberOfTries, 365);
-            document.getElementsByClassName('result').innerHTML += 'in '+ numberOfTries + 'attempt';
+            document.getElementsById('result').innerHTML += 'in '+ numberOfTries + 'attempt';
         }
     }
 }
